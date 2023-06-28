@@ -75,7 +75,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .ant-layout {
-  height: 100vh;
+  height: 100%;
 }
 .Content{
   overflow: auto;
@@ -87,10 +87,13 @@ export default {
     padding: 2rem;
     display: flex;
     width: 100%;
+    height: 100%;
     min-width: 124rem;
     backdrop-filter: grayscale(20%) contrast(70%) brightness(60%);
   }
 }
+
+
 .Content::-webkit-scrollbar{
   width: 6px;
   height: 6px;
@@ -103,6 +106,9 @@ export default {
   background-image: linear-gradient(#0d3141,#422b41 );
   border-radius: 3px;
 }
+
+
+
 .ant-layout-header {
   height: 6rem;
   line-height: 6rem;

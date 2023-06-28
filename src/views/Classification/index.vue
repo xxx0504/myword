@@ -4,7 +4,6 @@
     <div class="menus">
       <a-menu
       theme="dark" 
-      style="width: 270px;"
       @click="handleClick"
       :default-selected-keys="[current]"
     >
@@ -57,12 +56,30 @@ export default {
 <style lang="less" scoped>
 .Classification{
   width: 100%;
+  height: 100%;
   display: flex;
   .menus{
     width: 20%;
+    height: 100%;
+    padding-right: 5%;
   }
   .TypeCentent{
     width: 80%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 5%;
+  }
+  .TypeCentent::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  .TypeCentent::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-image: linear-gradient(#185876,#784d75 );
+  }
+  .TypeCentent::-webkit-scrollbar-track {
+    background-image: linear-gradient(#0d3141,#422b41 );
+    border-radius: 3px;
   }
 }
 
